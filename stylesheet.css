@@ -509,71 +509,84 @@ background-color:var(--bg-color);
 
 @media(max-width:1285px){
 
-#menu-icon{
-display:block;
-}
+    /* ===== HEADER ===== */
+    header{
+        padding: 2rem 5%;
+    }
 
-.navbar{
-position:absolute;
-top:100%;
-right:0;
-width:50%;
-padding:1rem 3rem;
-background:#161c17;
-border-bottom-left-radius:2rem;
-border-left:2px solid var(--main-color);
-border-bottom:2px solid var(--main-color);
-display:none;
-}
+    #menu-icon{
+        display: block;
+        font-size: 3.2rem;
+    }
 
-.navbar a{
-display:block;
-font-size:2rem;
-margin:3rem 0;
-}
+    .navbar{
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 60%;
+        padding: 2rem;
+        background: rgba(0,0,0,0.95);
+        border-bottom-left-radius: 2rem;
+        border-left: 2px solid var(--main-color);
+        border-bottom: 2px solid var(--main-color);
+        display: none;
+        z-index: 999;
+    }
 
-.navbar.active{
-display:block;
-}
+    .navbar a{
+        display: block;
+        font-size: 2rem;
+        margin: 2.5rem 0;
+    }
 
-.home{
-flex-direction:column-reverse;
-margin:5rem 0;
-gap:5rem;
-}
+    .navbar.active{
+        display: block;
+    }
 
-.home-content{
-align-items:center;
-text-align:center;
-}
+    /* ===== HOME ===== */
+    .home{
+        flex-direction: column-reverse;
+        margin: 5rem 0;
+        gap: 5rem;
+        text-align: center;
+    }
 
-.home-img img{
-width:56vw;
-}
+    .home-content{
+        align-items: center;
+        text-align: center;
+    }
 
-.about{
-flex-direction:column-reverse;
-text-align:center;
-}
+    .home-img img{
+        width: 60vw;
+    }
 
-.about img{
-width:52vw;
-}
+    /* ===== ABOUT ===== */
+    .about{
+        flex-direction: column-reverse;
+        text-align: center;
+    }
 
-.contact form{
-flex-direction:column;
-}
+    .about h2{
+        text-align: center;
+    }
 
-.skills-container{
-    grid-template-columns: 1fr;
-}
+    .about img{
+        width: 60vw;
+    }
 
-.work-container{
-    grid-template-columns: 1fr;
-}
-.work-card:nth-child(3){
-    grid-column: 1;
-    max-width: 3;
-}
+    /* ===== CONTACT ===== */
+    .contact form{
+        flex-direction: column;
+    }
+
+    /* ===== SKILLS ===== */
+    .skills-container{
+        grid-template-columns: 1fr;
+    }
+
+    /* ===== WORKS / PROJECTS ===== */
+    .work-container{
+        grid-template-columns: 1fr;
+    }
 
 }
